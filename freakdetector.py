@@ -5,21 +5,20 @@ from collections import deque
 import threading
 import queue
 import time
-from PIL import Image  # for GIF loading
-
+from PIL import Image 
 
 # ==========================================
 #             FILE PATHS (ALL MEMES)
 # ==========================================
 
-PATH_TONGUE_SHAKE      = r"C:\Users\Akash\Downloads\meme\freaky-orca.gif"
-PATH_HAND_ON_CHIN      = r"C:\Users\Akash\Downloads\meme\monkeythink.jpg"
-PATH_HEAD_NOD          = r"C:\Users\Akash\Downloads\meme\ishowspeed.gif"
-PATH_ONE_FINGER_UP     = r"C:\Users\Akash\Downloads\meme\monkeyrealize.jpeg"
-PATH_HANDS_ON_HEAD     = r"C:\Users\Akash\Downloads\meme\ishowspeed-wow.gif"
-PATH_NAMASTE           = r"C:\Users\Akash\Downloads\meme\freaky-sonic.mp4"
-PATH_THUMBS_UP         = r"C:\Users\Akash\Downloads\meme\thumbsupmonkey.png"
-PATH_IDLE_STARE        = r"C:\Users\Akash\Downloads\meme\monkeytruth.jpg"
+PATH_TONGUE_SHAKE      = r"memes\freaky-orca.gif"
+PATH_HAND_ON_CHIN      = r"memes\monkeythink.jpg"
+PATH_HEAD_NOD          = r"memes\ishowspeed.gif"
+PATH_ONE_FINGER_UP     = r"memes\monkeyrealize.jpeg"
+PATH_HANDS_ON_HEAD     = r"memes\ishowspeed-wow.gif"
+PATH_NAMASTE           = r"memes\freaky-sonic.mp4"
+PATH_THUMBS_UP         = r"memes\humbsupmonkey.png"
+PATH_IDLE_STARE        = r"memes\monkeytruth.jpg"
 IDLE_MIN_FRAMES = 70  # ~1+ second of stillness required
 idle_hold = 0         # internal counter
 palm_dist_buffer = deque(maxlen=20)
